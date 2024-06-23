@@ -14,7 +14,7 @@ SyncRouter.get("/", (req, res) => {
     i++;
   }
   console.log("Done");
-  res.status(200).send("Jai Shree Ram");
+  res.status(200).send({ status: "OK", message: "Sync Responded" });
 });
 
 module.exports.SyncRouter = SyncRouter;

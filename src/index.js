@@ -20,5 +20,5 @@ app.use("/async", AsyncRouter);
  *
  */
 app.get("/error", async (req, res) => {
-  res.status(500).send("failed");
+  res.status(500).send({ status: "Failed", error: "Error Responded" });
 });

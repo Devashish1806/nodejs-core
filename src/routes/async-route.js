@@ -15,7 +15,7 @@ AsyncRouter.get("/", async (req, res) => {
       }, 20000);
     })
   );
-  res.status(200).send("Jai Shree Ram");
+  res.status(200).send({ status: "OK", message: "Async Responded" });
 });
 
 module.exports.AsyncRouter = AsyncRouter;
